@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+             font-family:Arial, Helvetica, sans-serif;
+        }
+        a {
+            color:red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: darkred;
+
+        }
+        a:hover{
+            color: black;
+            text-decoration:underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial::before{
+            content: 'ᐕ';
+
+        }
+        .especial::after{ /* Pseudo elementos utilizado */
+            content: '.ᐛ';
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+
+        /* SELETORES PERSONALIZADOS:
+
+            # = id;
+            . = class;
+            : = pseudo-class;
+            :: = pseudo-element;
+            > = children (Filho); 
+        */
+
+    </style>
+</head>
+<body>    
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li> <a href="https://github.com/Naelbsiqueira/Naelbsiqueira" target="_blank">Repositório GitHub</a></li> <!--'target="_blank' serve para criar um link que irá sair da página. -->
+        <li><a href="https://www.youtube.com/channel/UCJLil2gGEaftM7IcfS8BD3Q" class="especial">Canal Youtube</a></li>
+        <li><a href="https://www.instagram.com/nael_bernardo/" class="especial">Site do Instagram</a></li>    
+    </ul>    
+</body>
+</html>
