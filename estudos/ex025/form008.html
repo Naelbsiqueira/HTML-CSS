@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulários</title>
+</head>
+<body>
+    <h1>Exemplo de Fomulários</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="id1">número 1</label>
+            <input type="text" name="n1" id="id1" min="0" max="50" required oninput="idsoma.innerHTML=Number(id1.value)+ Number(id2.value)">
+        </p>
+
+        <p>
+            <label for="id2">número 2</label>
+            <input type="text" name="n2" id="id2" min="0" max="50" oninput="idsoma.innerHTML=Number(id1.value)+ Number(id2.value)">
+        </p>
+
+        <p>
+            <label for="idsoma">Soma:</label>
+            <output name="soma" id="idsoma">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        
+        </p>
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
