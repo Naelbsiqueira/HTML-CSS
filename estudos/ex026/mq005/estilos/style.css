@@ -22,6 +22,7 @@ span#burger{
     display: block;
     color: white;
     text-align: center;
+    margin: auto;
     padding-top:10px ;
     padding-bottom: 10px;
     cursor: pointer;
